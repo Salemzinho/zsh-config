@@ -74,6 +74,13 @@ module.exports = {
             limeGreen: '#32CD32',
             lightCoral: '#F08080',
         },
+        hyperWindowSize: {
+       	transform: true,
+      	width: 100,
+      	height: 20,
+      	startX: 230,
+      	startY: 100
+        },
         // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
         // if left empty, your system's login shell will be used by default
         //
@@ -137,7 +144,8 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ['hyper-dracula'],
+    plugins: ['hyper-dracula',  'hyper-window-size'],
+	
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
